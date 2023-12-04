@@ -27,7 +27,7 @@ Deze pagina heb ik deze opdracht voor het eerst gemaakt, gebaseerd op de volgend
 
 ### 4. Contact page
 Deze pagina heb ik deze opdracht voor het eerst gemaakt, gebaseerd op de volgende **user story**: <br>
-```Als stichting of bewoner kun je een initiatief aanmelden via een contactformulier op de website.```
+```Als stichting of bewoner kan ik een initiatief aanmelden via een contactformulier op de website.```
 
 ### 5. Over ons page
 Deze pagina heb ik deze opdracht voor het eerst gemaakt, gebaseerd op de volgende **user story**: <br>
