@@ -1,3 +1,4 @@
+// Hamburger Menu
 window.addEventListener('load', () => {
   const ham = document.querySelector('.header__icon');
   const nav = document.querySelector('.header__nav');
@@ -6,3 +7,5 @@ window.addEventListener('load', () => {
       nav.classList.toggle('header__nav--visible');
   });
 });
+
+// Contact form
