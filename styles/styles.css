@@ -32,13 +32,68 @@
 body {
   margin: 0;
   padding: 0;
+  /* box-sizing: border-box; */
+  background-color: var(--white);
   font: normal normal normal 16px/1.5 "AvantGardeGothicMedium";
+}
+
+span {
+  color: var(--green);
+}
+
+ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: unset;
 }
 
 /* Header */
 /* _____________________________________________________________________________________________________________ */
 
+header {
+  display: flex;
+  flex-direction: column;
+}
 
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__branding {
+  margin: 0.6em;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.header__icon {
+  margin: 0.6em;
+  height: 32px;
+  width: 32px;
+}
+
+.header__nav a {
+  border-bottom: 2px solid var(--grey);
+  padding: 0.6em;
+}
+
+.header__nav a:first-of-type {
+  border-top: 2px solid var(--grey);
+}
+
+.header__nav {
+  display: flex;
+  max-height: 0;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  transition: max-height .3s ease-in-out;
+}
+
+.header__nav--visible {
+  max-height: 20vh;
+}
 
 /* Main */
 /* _____________________________________________________________________________________________________________ */
@@ -48,7 +103,54 @@ body {
 /* Footer */
 /* _____________________________________________________________________________________________________________ */
 
+/* footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 2em;
+}
 
+footer img {
+  width: 32px;
+  width: 32px;
+  filter: invert(100%) sepia(6%) saturate(24%) hue-rotate(141deg) brightness(106%) contrast(105%);
+}
+
+footer h4 {
+  font-size: 2em;
+  margin: 1em;
+  margin-top: 0;
+}
+
+.footer__social-links {
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+  padding-bottom: 1.4em;
+  margin-bottom: 1.4em;
+  border-bottom: 2px solid var(--white);
+}
+
+.footer__social-links a {
+  height: 32px;
+  width: 32px;
+}
+
+.footer__corporate-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__corporate-links a {
+  padding: 0 1em;
+}
+
+.footer__corporate-links a:not(:last-child) {
+  border-right: 2px solid var(--white);
+} */
 
 /* Media Queries */
 /* _____________________________________________________________________________________________________________ */
