@@ -15,6 +15,7 @@
   --green: #46aa64;
   --navy: #0a3250;
   --black: #000000;
+  --red: #ff0000;
 }
 
 /* Accessibility */
@@ -155,6 +156,26 @@ img {
   text-align: center;
   margin-top: 6em;
   margin-bottom: 6em;
+}
+
+.form__invalid {
+  display: none;
+  color: var(--red);
+  font-size: 0.8em;
+}
+
+.form__invalid--visible {
+  display: block;
+  border: 2px solid var(--red);
+}
+
+.form__invalid--message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 0;
+  font-size: 0.9em;
 }
 
 /* Footer */

@@ -22,12 +22,16 @@
   </header>
 
   <main>
-    <form action="contact-thanks.html">
+    <form action="contact-thanks.html" name="contactform">
+      <p id="invalidFieldMessage" class="form__invalid">Let op! Je moet alle velden invullen.</p>
       <label for="fname">Voornaam<span>*</span></label>
       <input type="text" id="vnaam" name="voornaam" placeholder="Jouw voornaam.." required>
 
       <label for="lname">Achternaam<span>*</span></label>
       <input type="text" id="anaam" name="achternaam" placeholder="Jouw achternaam.." required>
+
+      <label for="lname">E-mail<span>*</span></label>
+      <input type="text" id="email" name="email" placeholder="info@voorbeeld.nl" required>
 
       <label for="type">Type verzoek<span>*</span></label>
       <select id="type" name="type" required>
