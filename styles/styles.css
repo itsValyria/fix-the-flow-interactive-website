@@ -103,6 +103,10 @@ header {
   border-top: 2px solid var(--grey);
 }
 
+.header__nav a:last-of-type {
+  border-bottom: none;
+}
+
 .header__nav {
   display: flex;
   max-height: 0;
@@ -172,10 +176,18 @@ img {
 .form__invalid--message {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 2em;
   margin-bottom: 0;
   font-size: 0.9em;
+}
+
+.form__title {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+.form__description {
+  margin-top: 0;
+  font-size: 0.8em;
 }
 
 /* Footer */
@@ -235,8 +247,131 @@ footer h4 {
 
 /* Size M Device - Tablet */
 
-/* @media (min-width: 768px) and (max-width: 1023px) {} */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* Header */
+
+  .header__branding {
+    font-size: 2.4em;
+  }
+
+  .header__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .header__nav a {
+    font-size: 1.4em;
+  }
+
+  /* Footer */
+
+  .footer__social-links {
+    justify-content: center;
+    gap: 4em;
+    width: 50vw;
+  }
+
+  /* Contact */
+  form {
+    font-size: 1.4em;
+  }
+
+  .form__title {
+    margin-top: 2em;
+    margin-bottom: 0;
+    font-size: 1.2em;
+  }
+  
+  .form__description {
+    margin-top: 0;
+    font-size: 1em;
+  }
+}
 
 /* Size L-XL Device - Laptop-Desktop */
 
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+  /* Header */
+
+  .header__top {
+    padding: 1em 6em;
+  }
+
+  .header__branding {
+    font-size: 2em;
+    margin: 0.6em 0;
+  }
+
+  .header__branding:hover {
+    cursor: pointer;
+  }
+
+  .header__icon {
+    width: 42px;
+    height: 42px;
+    margin: 0;
+  }
+
+  .header__icon:hover {
+    cursor: pointer;
+  }
+
+  .header__nav {
+    font-size: 1.4em
+  }
+
+  .header__nav--visible {
+    max-height: 30vh;
+  }
+
+  .header__nav--visible a:hover {
+    color: var(--green);
+    text-decoration: underline;
+    transition: 0.4s;
+  }
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 3em 17em; */
+    padding: 3em 6em
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  footer img:hover {
+    filter: invert(60%) sepia(6%) saturate(24%) hue-rotate(141deg) brightness(106%) contrast(105%);
+    transition: 0.4s;
+  }
+
+  .footer__social-links {
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+    width: unset;
+  }
+
+  /* Contact */
+  form {
+    width: 40vw;
+  }
+
+  .form__title {
+    font-size: 2em;
+  }
+
+  .form__description {
+    font-size: 1.4em;
+  }
+
+}
