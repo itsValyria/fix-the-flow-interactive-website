@@ -65,6 +65,7 @@ ul, li, a {
   list-style-type: none;
   text-decoration: none;
   color: unset;
+  padding: 0;
 }
 
 /* Header */
@@ -121,7 +122,7 @@ header {
   max-height: 22vh;
 }
 
-/* Main */
+/* Information Page */
 /* _____________________________________________________________________________________________________________ */
 
 .main__hero {
@@ -152,6 +153,42 @@ header {
   font-size: 2em;
 }
 
+.main__description {
+  max-width: 88vw;
+  margin: 0 auto;
+  border-bottom: 4px solid var(--navy);
+}
+
+.main__description p {
+  max-width: 30em;
+}
+
+.main__link {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.main__info li {
+  display: flex;
+  gap: 1em;
+}
+
+.main__list {
+  width: 89vw;
+  margin: 0 auto;
+  border-bottom: 4px solid var(--navy);
+}
+
+iframe {
+  display: block;
+  height: 60vw;
+  width: 88vw;
+  border-radius: 8px;
+  margin: 2em auto;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+}
+
 /* Contact */
 /* _____________________________________________________________________________________________________________ */
 
@@ -177,7 +214,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-img {
+.contact__thanks img {
   width: 100%;
   filter: hue-rotate(290deg);
 }
@@ -323,6 +360,18 @@ footer h4 {
   .main__hero-title {
     font-size: 3em;
   }
+  
+  .main__description h3 {
+    font-size: 1.6em;
+  }
+
+  .main__description p {
+    font-size: 1.2em;
+  }
+
+  .main__info {
+    font-size: 1.2em;
+  }
 }
 
 /* Size L-XL Device - Laptop-Desktop */
@@ -416,11 +465,51 @@ footer h4 {
 
   /* Information page */
 
+  .main__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4e9db;
+    border-radius: 16px;
+    width: 70vw;
+    margin: 2em auto;
+    padding: 2em 1em;
+    box-sizing: border-box;
+  }
+
+  .main__description {
+    border-bottom: none;
+  }
+
+  .main__link {
+    text-decoration: none;
+  }
+
+  .main__link:hover {
+    text-decoration: underline;
+  }
+
+  .main__list {
+    width: unset;
+    border-bottom: none;
+    border-left: solid 4px var(--green);
+    padding-left: 2em;
+  }
+
+  .main__list li {
+    padding: 0.4em;
+  }
+
   .main__hero {
     min-height: 14em;
   }
 
   .main__hero-title {
     font-size: 2.4em;
+  }
+
+  iframe {
+    width: 70vw;
+    height: 30vw;
   }
 }
