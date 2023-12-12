@@ -287,6 +287,10 @@ footer h4 {
     margin-top: 0;
     font-size: 1em;
   }
+
+  .contact__thanks h1 {
+    font-size: 2.6em;
+  }
 }
 
 /* Size L-XL Device - Laptop-Desktop */
@@ -372,6 +376,10 @@ footer h4 {
 
   .form__description {
     font-size: 1.4em;
+  }
+
+  .contact__thanks img {
+    width: 26%;
   }
 
 }
