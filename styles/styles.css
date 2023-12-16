@@ -189,6 +189,50 @@ iframe {
 
 }
 
+/* About us page */
+
+.main__about {
+  width: 80vw;
+  margin: 2em auto;
+}
+
+.main__about h1 {
+  margin-bottom: 0;
+  font-size: 2.2em;
+}
+
+.main__about h2 {
+  margin-top: 0;
+  font-size: 1.4em;
+}
+
+.main__about--foto {
+  display: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.main__about iframe {
+  width: 80vw;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.main__about--contactinfo {
+  margin: 2em 0;
+}
+
+.main__about--contactinfo p {
+  margin: 0;
+}
+
+.main__about--contactinfo h3 {
+  margin-bottom: 0;
+}
+
+.main__about--extrainfo {
+  display: none;
+}
+
 /* Contact */
 /* _____________________________________________________________________________________________________________ */
 
@@ -374,6 +418,36 @@ footer h4 {
   }
 }
 
+/* About us page */
+
+.main__about h1 {
+  font-size: 3em;
+}
+
+.main__about h2 {
+  font-size: 1.8em;
+}
+
+.main__about p {
+  font-size: 1.2em;
+}
+
+.main__about--foto {
+  display: none;
+}
+
+.main__about iframe {
+  height: 40vw;
+}
+
+.main__about--contactinfo p {
+  font-size: 1em;
+}
+
+.main__about--contactinfo h3 {
+  font-size: 1.6em;
+}
+
 /* Size L-XL Device - Laptop-Desktop */
 
 @media (min-width: 1024px) {
@@ -511,5 +585,40 @@ footer h4 {
   iframe {
     width: 70vw;
     height: 30vw;
+  }
+
+  /* About us page */
+
+  .main__about {
+    display: flex;
+    gap: 4em;
+    width: 60vw;
+  }
+
+  .main__about--images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  
+  .main__about--foto {
+    display: block;
+    height: 30vw;
+    margin: 1em 0;
+  }
+
+  .main__about iframe {
+    height: 20vw;
+    width: 30vw;
+  }
+
+  .main__about--extrainfo {
+    display: block;
+  }
+
+  .main__about h1 {
+    margin: 0;
   }
 }
