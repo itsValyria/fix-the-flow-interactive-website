@@ -294,7 +294,7 @@ iframe {
 
 /* Contact */
 
-.contant__form {
+.contact__form {
   width: 80vw;
   display: flex;
   margin: 0 auto;
@@ -302,7 +302,7 @@ iframe {
   font-size: 1.2em;
 }
 
-.contant__form label,
+.contact__form label,
 input[type="submit"] {
   margin-top: 1.4em;
 }
@@ -560,7 +560,7 @@ footer h4 {
   }
 
   /* Contact */
-  .contant__form {
+  .contact__form {
     font-size: 1.4em;
   }
 
@@ -596,70 +596,75 @@ footer h4 {
   .main__info {
     font-size: 1.2em;
   }
-}
 
-/* About us page */
+  /* About us page */
 
-.main__about h1 {
-  font-size: 3em;
-}
+  .main__about h1 {
+    font-size: 3em;
+  }
 
-.main__about h2 {
-  font-size: 1.8em;
-}
+  .main__about h2 {
+    font-size: 1.8em;
+  }
 
-.main__about p {
-  font-size: 1.2em;
-}
+  .main__about p {
+    font-size: 1.2em;
+  }
 
-.main__about--foto {
-  display: none;
-}
+  .main__about--foto {
+    display: none;
+  }
 
-.main__about iframe {
-  height: 40vw;
-}
+  .main__about iframe {
+    height: 40vw;
+  }
 
-.main__about--contactinfo p {
-  font-size: 1em;
-}
+  .main__about--contactinfo p {
+    font-size: 1em;
+  }
 
-.main__about--contactinfo h3 {
-  font-size: 1.6em;
-}
+  .main__about--contactinfo h3 {
+    font-size: 1.6em;
+  }
 
-/* Landing/Index */
+  /* Landing/Index */
 
-.main__index--hero {
-  min-height: 30em;
-}
+  .main__index--hero {
+    min-height: 30em;
+  }
 
-.main__index--title {
-  font-size: 5em;
-}
+  .main__index--title {
+    font-size: 5em;
+  }
 
-.main__index--slogun {
-  font-size: 2.6em;
-}
+  .main__index--slogun {
+    font-size: 2.6em;
+  }
 
-.main__index--link {
-  font-size: 1.8em;
-  margin: 1.3em 0;
-}
+  .main__index--link {
+    font-size: 1.8em;
+    margin: 1.3em 0;
+  }
 
-/* Overzicht */
+  /* Overzicht */
 
-.advertisement__gridcontainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+  .advertisement__gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.advertisement {
-  height: 30em;
-}
+  .advertisement {
+    height: 30em;
+  }
 
-input[type=search] {
-  width: 35em;
+  input[type=search] {
+    width: 35em;
+  }
+
+  .form__overzicht--header {
+    width: 95%;
+    margin: 1em auto;
+  }
 }
 
 /* Size L-XL Device - Laptop-Desktop */
@@ -735,7 +740,7 @@ input[type=search] {
   }
 
   /* Contact */
-  .contant__form {
+  .contact__form {
     width: 40vw;
   }
 
@@ -844,10 +849,24 @@ input[type=search] {
     gap: 6em;
     margin: 1.6em 0;
   }
+
+  .main__index--hero {
+    min-height: 30em;
+  }
   
   .main__index--link {
-    width: 20vw
+    width: 20vw;
+    font-size: 2em;
   }
+
+  .main__index--title {
+    font-size: 4em;
+  }
+
+  .main__index--slogun {
+    font-size: 2em;
+  }
+
   /* OVerzicht pagina */
 
   .form__overzicht {
@@ -866,7 +885,8 @@ input[type=search] {
   }
 
   .form__overzicht--header {
-    margin-left: 0;
+    margin: 0;
+    width: 100%;
     font-size: 1.6em;
     font-weight: bold;
   }
@@ -879,6 +899,26 @@ input[type=search] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .form__overzicht--main {
+    display: flex;
+  }
+
+  .form__overzicht--search {
+    margin: 1em;
+    margin-top: 2em;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .advertisement {
+    height: 25em;
+  }
+
+  input[type=search] {
+    width: 35em;
+  }
+
 }
 
 /* Checkbox */
