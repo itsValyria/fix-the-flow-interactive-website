@@ -23,6 +23,176 @@
 
   <main>
 
+    <form class="form__overzicht">
+      <p class="form__overzicht--header">Verfijn resultaten</p>
+      <!-- ===================== Vraag & Aanbod ===================== -->
+      <h6>Soort</h6>
+      <ul>
+        <li><label><input type="checkbox">Vraag</label></li>
+        <li><label><input type="checkbox">Aanbod</label></li>
+      </ul>
+      <!-- ===================== Wijk ===================== -->
+      <h6>Wijk</h6>
+      <ul>
+        <li><label><input type="checkbox">Admiralenbuurt</label></li>
+        <li><label><input type="checkbox">Bos en Lommer</label></li>
+        <li><label><input type="checkbox">Chassébuurt</label></li>
+        <li><label><input type="checkbox">Frederik Hendrikbuurt</label></li>
+        <li><label><input type="checkbox">Houthaven</label></li>
+        <li><label><input type="checkbox">Kinkerbuurt</label></li>
+        <li><label><input type="checkbox">Kolenkitbuurt</label></li>
+        <li><label><input type="checkbox">Landlust</label></li>
+        <li><label><input type="checkbox">Overtoombuurt</label></li>
+        <li><label><input type="checkbox">Postjesbuurt</label></li>
+        <li><label><input type="checkbox">Spaarndammerbuurt</label></li>
+        <li><label><input type="checkbox">Staatsliedenbuurt</label></li>
+        <li><label><input type="checkbox">Trompbuurt</label></li>
+        <li><label><input type="checkbox">Waterwijk</label></li>
+        <li><label><input type="checkbox">Westerpark</label></li>
+        <li><label><input type="checkbox">Zeeheldenbuurt</label></li>
+      </ul>
+      <!-- ===================== Afstand ===================== -->
+      <h6>Maximale afstand</h6>
+      <input type="range" min="0" max="30" step="2">
+      <section class="form__overzicht--range">
+        <p>0km</p>
+        <p>25km</p>
+      </section>
+    </form>
+
+    <!-- ===================== Zoeken & Iets plaatsen... ===================== -->
+    <section class="form__overzicht--header">
+      <button class="form__overzicht--button" onclick="showfilter()">
+        <svg class="form__reveal" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z"/></svg>
+        <svg class="show form__back" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="M440-160q-17 0-28.5-11.5T400-200v-240L168-736q-15-20-4.5-42t36.5-22h560q26 0 36.5 22t-4.5 42L560-440v240q0 17-11.5 28.5T520-160h-80Zm40-308 198-252H282l198 252Zm0 0Z"/></svg>
+      </button>
+      <form class="form__overzicht--search">
+        <input type="search" placeholder="Zoeken..." class="Zoekbalk.">
+        <button class="form__overzicht--searchbutton"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+      </form>
+    </section>
+
+    <!-- ===================== Advertisements ===================== -->
+    <section class="advertisement__gridcontainer">
+
+      <li class="advertisement__container">
+        <a class="advertisement__link" href="informatie.html">
+          <img class="advertisement__image" src="assets/initiatief-cover-squarew.jpg" alt="Foto van het Alzheimercafé.">
+          <section class="advertisement">
+            <article class="advertisement__left">
+              <h3>Big Brothers, Big Sisters</h3>
+              <p class="advertisement__description">Big brothers Big sisters is een mentorprogramma voor kinderen van 5 tot 18 jaar. Hier kunnen kinderen terecht om met allerlei dingen die hun bezig houden met een broeder of zusterfiguur te praten erover. Elke zaterdagavond is er een bijeenkomst.</p>
+            </article>
+            <ul class="advertisement__right">
+              <li class="advertisement__info">
+                <img src="assets/calendar.svg" alt="Kalender icoontje.">
+                <p>Op afspraak</p>
+              </li>
+              <li class="advertisement__info">
+                <img src="assets/location.svg" alt="Locatie pin icoontje.">
+                <p>Op afspraak</p>
+              </li>
+              <li class="advertisement__info">
+                <img src="assets/time.svg" alt="Klok icoontje.">
+                <p>Op afspraak</p>
+              </li>
+            </ul>
+          </section>
+        </a>
+      </li>
+
+      <li class="advertisement__container">
+        <a class="advertisement__link" href="#">
+          <img class="advertisement__image" src="assets/alzheimercafe.jpg" alt="Foto van het Alzheimercafé.">
+          <section class="advertisement">
+            <article class="advertisement__left">
+              <h3>Amsterdams Buurtvrouwen Contact</h3>
+              <p class="advertisement__description">Elke vrijdag organiseert het Amsterdams Buurtvrouwen Contact taalles voor mensen die dit nodig hebben. Ze zijn onderdeel van de Regenbooggroep. Bij het Amsterdams Buurtvrouwen Contact is iedereen welkom. Benieuwd geworden? Kom gezellig langs.</p>
+            </article>
+            <ul class="advertisement__right">
+              <li class="advertisement__info">
+                <img src="assets/calendar.svg" alt="Kalender icoontje.">
+                <p>13-10-2023</p>
+              </li>
+              <li class="advertisement__info">
+                <img src="assets/location.svg" alt="Locatie pin icoontje.">
+                <p>Café Belacampo</p>
+              </li>
+              <li class="advertisement__info">
+                <img src="assets/time.svg" alt="Klok icoontje.">
+                <p>18:00 - 22:00</p>
+              </li>
+            </ul>
+          </section>
+        </a>
+      </li>
+
+      <li class="advertisement__container">
+        <a class="advertisement__link" href="#">
+          <img class="advertisement__image" src="assets/vintagemarkt.jpeg" alt="Foto van het Alzheimercafé.">
+          <section class="advertisement">
+            <article class="advertisement__left">
+              <h3>Beter Buren</h3>
+              <p class="advertisement__description">Beter Buren stelt gratis hulp bij buurtgeschillen beschikbaar. Elke vierde woensdag van de maand is er een inloop bijeenkomst en je kunt altijd contact met Beter Buren opnemen. Heb jij een geschil met je buren wat je graag op zou willen lossen? Klik dan hier voor meer informatie.</p>
+            </article>
+            <ul class="advertisement__right">
+              <li class="advertisement__info">
+                <img src="assets/calendar.svg" alt="Kalender icoontje.">
+                <p>27-10-2023</p>
+              </li>
+              <li class="advertisement__info">
+                <img src="assets/location.svg" alt="Locatie pin icoontje.">
+                <p>Buurtcentrum Beter Buren</p>
+              </li>
+              <li class="advertisement__info">
+                <img src="assets/time.svg" alt="Klok icoontje.">
+                <p>11:00 - 17:00</p>
+              </li>
+            </ul>
+          </section>
+        </a>
+      </li>
+
+      <li class="advertisement__container">
+        <a class="advertisement__link" href="informatie.html">
+          <img class="advertisement__image" src="assets/initiatief-cover-squarew.jpg" alt="Foto van het Alzheimercafé.">
+          <section class="advertisement">
+            <article class="advertisement__left">
+              <h3>Big Brothers, Big Sisters</h3>
+              <p class="advertisement__description">Big brothers Big sisters is een mentorprogramma voor kinderen van 5 tot 18 jaar. Hier kunnen kinderen terecht om met allerlei dingen die hun bezig houden met een broeder of zusterfiguur te praten erover. Elke zaterdagavond is er een bijeenkomst.</p>
+            </article>
+            <ul class="advertisement__right">
+              <li class="advertisement__info">
+                <img src="assets/calendar.svg" alt="Kalender icoontje.">
+                <p>Op afspraak</p>
+              </li>
+              <li class="advertisement__info">
+                <img src="assets/location.svg" alt="Locatie pin icoontje.">
+                <p>Op afspraak</p>
+              </li>
+              <li class="advertisement__info">
+                <img src="assets/time.svg" alt="Klok icoontje.">
+                <p>Op afspraak</p>
+              </li>
+            </ul>
+          </section>
+        </a>
+      </li>
+
+    </section>
+
+    <!-- Pagina navigatie -->
+
+    <section class="overzicht__navigation">
+      <img src="assets/left.svg">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+      <img src="assets/right.svg">
+    </section>
+
   </main>
 
   <footer>

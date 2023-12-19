@@ -48,4 +48,14 @@ function checkIfEmpty(element) {
   }
 }
  
-// Contact form | E-mail invalid
+// Filter Overzicht
+
+function showfilter() {
+  const form = document.querySelector('form')
+  form.classList.toggle('show-filter')
+
+  const toggle = document.querySelector('.form__overzicht--button')
+    for (const svg of toggle.children) {
+      svg.classList.toggle('show')
+    }
+}
