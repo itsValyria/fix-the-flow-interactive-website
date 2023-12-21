@@ -5,6 +5,8 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 De Buurtcampus is een website waar je terecht kunt als buurtbewoner van Amsterdam West voor allerlei activiteiten en initiatieven. Er is een mooie landing page, een overzicht, een pagina met meer informatie, een over ons pagina, en een manier om contact op te nemen als je zelf een intiatief wil beginnen of een vraag naar een initiatief hebt.
 
+![image](https://github.com/itsValyria/fix-the-flow-interactive-website/assets/76444716/e2a537bf-ed77-4972-9d0b-6cb63249e495)
+
 ## User Stories
 <!-- Schrijf de user story waar je aan hebt gewerkt  -->
 In deze website heb ik al mijn vorig werk gebundeld tot een werkend geheel, met de volgende user stories:
